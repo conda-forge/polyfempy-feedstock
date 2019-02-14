@@ -5,13 +5,13 @@
 About polyfempy
 ===============
 
-Home: https://github.com/polyfem/polyfem-python
+Home: https://polyfem.github.io/
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Polyfem python binidings
+Summary: Easy-to-use powerfull finite element library based on Polyfem
 
 Polyfem python binidings
 
