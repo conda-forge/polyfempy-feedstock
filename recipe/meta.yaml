@@ -1,5 +1,5 @@
 {% set name = "polyfempy" %}
-{% set version = "0.0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: 2d075a9dcf2c5134967307b156506c394cb5875b63ded3c481d0cb2945342a8a
+  sha256: 400cb5e38c730f3811e04cfe1e510545be630d6516a6f399995bf42fd17253c2
 
 build:
   number: 0
@@ -35,17 +35,17 @@ test:
     - polyfempy
 
 about:
-  home: https://github.com/polyfem/polyfem-python
+  home: https://polyfem.github.io/
 
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
 
-  summary: 'Polyfem python binidings'
+  summary: 'Easy-to-use powerfull finite element library based on Polyfem'
 
-  description: 'Polyfem python binidings'
+  description: 'Easy-to-use powerfull finite element library based on Polyfem'
   doc_url: https://polyfem.github.io/
-  dev_url: https://github.com/polyfem/polyfem/
+  dev_url: https://github.com/polyfem/polyfem-python
 
 extra:
   recipe-maintainers:
