@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: 400cb5e38c730f3811e04cfe1e510545be630d6516a6f399995bf42fd17253c2
+  sha256: 0a77d43958b495555df7aebb933423359155f8ff4b0d0ba17c2c09a8a3f5d7ba
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<31]
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
