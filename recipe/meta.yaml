@@ -1,5 +1,5 @@
 {% set name = "polyfempy" %}
-{% set version = "0.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: 0a77d43958b495555df7aebb933423359155f8ff4b0d0ba17c2c09a8a3f5d7ba
+  sha256: 37cf1ec976040f6ee0dc6f0dd2fae1b8593ab14d724dd7cbfdb06067f936db04
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py<31]
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
