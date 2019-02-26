@@ -13,7 +13,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Easy-to-use powerfull finite element library based on Polyfem
 
-Polyfem python binidings
+Easy-to-use powerfull finite element library based on Polyfem
 
 Current build status
 ====================
