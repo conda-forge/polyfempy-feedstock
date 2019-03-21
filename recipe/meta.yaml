@@ -11,8 +11,8 @@ source:
   sha256: b3e5cea6672a657fcb2a7bcf40e5a7a41f4f8735f9b5179e7ffa44ec496b4030
 
 build:
-  number: 0
-  skip: True  # [py<31]
+  number: 1
+  # skip: True  # [py<31]
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -25,6 +25,7 @@ requirements:
   host:
     - python
     - pip
+    - suitesparse
     - setuptools
   run:
     - python
