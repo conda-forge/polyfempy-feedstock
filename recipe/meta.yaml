@@ -34,12 +34,12 @@ requirements:
 test:
   imports:
     - polyfempy
-  commands:
-    - python test/test_bending.py
-    - python test/test_gravity.py
-    - python test/test_inflation.py
-    - python test/test_plane_hole.py
-    # - python test/test_torsion.py
+  # commands:
+  #   - python test/test_bending.py
+  #   - python test/test_gravity.py
+  #   - python test/test_inflation.py
+  #   - python test/test_plane_hole.py
+  #   - python test/test_torsion.py
 
 about:
   home: https://polyfem.github.io/
