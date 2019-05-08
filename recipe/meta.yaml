@@ -22,12 +22,12 @@ requirements:
     - {{ compiler('cxx') }}
     - git
     - cmake
+    - libsuitesparse
   host:
     - python
     - pip
     - setuptools
   run:
-    - libsuitesparse-dev
     - python
     - numpy >=1.9.1
 
