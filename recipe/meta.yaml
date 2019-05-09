@@ -22,14 +22,17 @@ requirements:
     - {{ compiler('cxx') }}
     - git
     - cmake
-    - libsuitesparse
   host:
     - python
     - pip
     - setuptools
+    - libblas
+    - libcblas
+    - suitesparse
   run:
     - python
     - numpy >=1.9.1
+    - suitesparse
 
 test:
   imports:
