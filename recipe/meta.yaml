@@ -32,7 +32,6 @@ requirements:
   run:
     - python
     - numpy >=1.9.1
-    - suitesparse
 
 test:
   imports:
