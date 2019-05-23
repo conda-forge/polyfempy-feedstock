@@ -26,10 +26,12 @@ requirements:
     - pip
     - libblas
     - libcblas
+    - numpy
     - suitesparse
   run:
     - python
-    - numpy
+    - {{ pin_compatible('numpy') }}
+    - suitesparse
 
 test:
   imports:
