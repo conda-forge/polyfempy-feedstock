@@ -27,11 +27,11 @@ requirements:
     - libblas
     - libcblas
     - numpy
-    - suitesparse
+    - suitesparse  # [not linux_ppc64le and not linux_aarch64]
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - suitesparse
+    - suitesparse  # [not linux_ppc64le and not linux_aarch64]
 
 test:
   imports:
