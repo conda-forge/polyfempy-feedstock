@@ -9,7 +9,18 @@ Feedstock license: BSD 3-Clause
 
 Summary: Easy-to-use powerfull finite element library based on Polyfem
 
-Easy-to-use powerfull finite element library based on Polyfem
+PolyFEM is a simple C++ and Python finite element library. We provide a wide set of common PDEs including:
+- Laplace
+- Helmholtz
+- Linear Elasticity
+- Saint-Venant Elasticity
+- Neo-Hookean Elasticity
+- Stokes
+PolyFEM simplicity lies on the interface: just pick a problem, select some boundary condition, and solve.
+No need to construct complicated function spaces, or learn a new scripting language: everything is set-up trough a the Setting python class.
+For instance, PolyFEM seamlessly integrates quad/hexes and tri/tets of order up to 4, and integrate state-of-the-art techniques such as the adaptive p-refinement.
+The library is actively used in our research so expect frequent updates, fixes, and new features!
+
 
 Current build status
 ====================
