@@ -11,7 +11,7 @@ source:
   sha256: 5cc33ca5f6eaadbc0baa6cbd89c112807a01b1a1502736188236bf84fdbcbe5a
 
 build:
-  number: 1
+  number: 2
   skip: True  # [py<31]
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -28,11 +28,11 @@ requirements:
     - libblas
     - libcblas
     - numpy
-    - suitesparse  # [not ppc64le and not aarch64]
+    - suitesparse  # [not ppc64le and not aarch64 and not win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - suitesparse  # [not ppc64le and not aarch64]
+    - suitesparse  # [not ppc64le and not aarch64 and not win]
 
 test:
   imports:
@@ -55,6 +55,7 @@ about:
     - Saint-Venant Elasticity
     - Neo-Hookean Elasticity
     - Stokes
+
     PolyFEM simplicity lies on the interface: just pick a problem, select some boundary condition, and solve.
     No need to construct complicated function spaces, or learn a new scripting language: everything is set-up trough a the Setting python class.
     For instance, PolyFEM seamlessly integrates quad/hexes and tri/tets of order up to 4, and integrate state-of-the-art techniques such as the adaptive p-refinement.
