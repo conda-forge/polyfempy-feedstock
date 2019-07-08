@@ -11,7 +11,7 @@ source:
   sha256: bf0a67fa0f0bce54030780d3dc6cd99ed5bf64632f388dbb011d3d1bb0addcbe
 
 build:
-  number: 2
+  number: 0
   skip: True  # [py<31]
   script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -28,11 +28,11 @@ requirements:
     - libblas
     - libcblas
     - numpy
-    - suitesparse  # [not ppc64le and not aarch64 and not win]
+    - suitesparse  # [not ppc64le and not aarch64]
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - suitesparse  # [not ppc64le and not aarch64 and not win]
+    - suitesparse  # [not ppc64le and not aarch64]
 
 test:
   imports:
