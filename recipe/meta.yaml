@@ -8,13 +8,14 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: 9c7f97fff3812742b2c23ba2d6a2d3bbc996cdc1086b69f6785d190ce45ca335
+  sha256: fc726322881ed1ef9b121a27e23980ea646ccf888a236bda3ef9673254682783
 
 build:
   number: 1
   skip: True  # [py<31]
   script:
-    - "{{ PYTHON }} -m pip install . --no-deps -vv"
+    - set "CMAKE_GENERATOR=NMake Makefiles" # [win]
+    - {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
