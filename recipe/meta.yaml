@@ -8,13 +8,14 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: 9c7f97fff3812742b2c23ba2d6a2d3bbc996cdc1086b69f6785d190ce45ca335
+  sha256: f02667d4d6cc02206a36ae9cbf4c7353a12789317228653d1b39cb551d74efff
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<31]
   script:
-    - "{{ PYTHON }} -m pip install . --no-deps -vv"
+    - set "CMAKE_GENERATOR=NMake Makefiles"  # [win]
+    - {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -28,11 +29,11 @@ requirements:
     - libblas
     - libcblas
     - numpy
-    - suitesparse  # [not ppc64le and not aarch64]
+    - suitesparse  # [not ppc64le and not aarch64 and not win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - suitesparse  # [not ppc64le and not aarch64]
+    - suitesparse  # [not ppc64le and not aarch64 and not win]
 
 test:
   imports:
@@ -48,13 +49,13 @@ about:
   summary: 'Easy-to-use powerfull finite element library based on Polyfem'
 
   description: |
-    PolyFEM is a simple C++ and Python finite element library. We provide a wide set of common PDEs including:
+    PolyFEM is a simple C++ and Python finite element library. We provide a wide set of common PDEs including:<br/>
     - Laplace
     - Helmholtz
     - Linear Elasticity
     - Saint-Venant Elasticity
     - Neo-Hookean Elasticity
-    - Stokes
+    - Stokes<br/>
 
     PolyFEM simplicity lies on the interface: just pick a problem, select some boundary condition, and solve.
     No need to construct complicated function spaces, or learn a new scripting language: everything is set-up trough a the Setting python class.
