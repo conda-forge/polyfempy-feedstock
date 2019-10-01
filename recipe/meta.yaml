@@ -1,5 +1,5 @@
 {% set name = "polyfempy" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: f02667d4d6cc02206a36ae9cbf4c7353a12789317228653d1b39cb551d74efff
+  sha256: b7d83e631c69bb455531f72e1ba173d005e8c2f06698384e5f9d4e19e363267a
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py<31]
   script:
     - set "CMAKE_GENERATOR=NMake Makefiles"  # [win]
