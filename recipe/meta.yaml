@@ -1,5 +1,5 @@
 {% set name = "polyfempy" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: b7d83e631c69bb455531f72e1ba173d005e8c2f06698384e5f9d4e19e363267a
+  sha256: c29ca0d1b7535865ea08cd61ae00179316b21db79347911e55f9e72ed1fd9b18
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<31]
   script:
     - set "CMAKE_GENERATOR=NMake Makefiles"  # [win]
@@ -30,10 +30,12 @@ requirements:
     - libcblas
     - numpy
     - suitesparse  # [not ppc64le and not aarch64 and not win]
+    - mkl
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - suitesparse  # [not ppc64le and not aarch64 and not win]
+    - mkl
 
 test:
   imports:
