@@ -9,3 +9,4 @@ appveyor:
 #   linux_aarch64: azure
 provider:
   win: azure
+conda_forge_output_validation: true
