@@ -1,12 +1,3 @@
-travis:
-  secure:
-    BINSTAR_TOKEN: UAXiVNgJdSFRTqK1sUinWuOTA+1ySHs/smXxCBSV/9ZzDbprRdA+ffQ+znAR1ocM5bGctXteT8An2LiskQRlnnVnSXQyAYXDp9m+eCY2UHQ3HXUEr9gWrQO1sayaPcAdzvwDceGUMr4aN6z/XiETTn/RsrgZ2HD3+6xZnqVDHVmXsCVZmpC3CWoHTWPHM4BnTvBy+6vK1MjjOLuaeMlj7kqoefk6Wb3CKHu6hxXDDSMAbyzjniRhopYg8mfDVqe9/YWLsymsz2KBkNFke8hcYC3TWUpDBGeQN13qgqeQkDbfB0hkJZhHUQSCoJ46pyyWDacpkrTLim0E7e/iAKkomSio1rY+5kMKP/6S+pGwQ1OqhplpaAxfMWUlHRG3mGDC1Q3IssBrLClwqgwuAJn380v85PB8imOsvFfAHLJOyGQw4M4hH6hYrZrscmgVsxB2VUuANPpKGN1aRuUPCqDJtxR90+sql1Fyxklaq22RRz00u0deCzACfwDyFJSajRNZ9W1el9dZk+/HDLjqlis1EvPZ6dnX3gU9IpZmF8nKhhjELNPwQBm6lVvMjCwVV8sXovbc31jOzgOcSXHI2yH44dfW4p06UrkrFki5Gi0GaktlkOSalG+v5sfSMuNhfpaQHjtCzLPmMmD/sjFnKLhc+63ZXXmlJ3p02O2+XurEXKg=
-appveyor:
-  secure:
-    BINSTAR_TOKEN: tumuXLL8PU75WMnRDemRy02ruEq2RpNxeK3dz0MjFssnosPm2v4EFjfNB4PTotA1
-# provider:
-#   linux_ppc64le: azure
-#   linux_aarch64: azure
 provider:
   win: azure
 conda_forge_output_validation: true
