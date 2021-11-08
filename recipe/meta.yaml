@@ -33,7 +33,7 @@ requirements:
     - suitesparse  # [not ppc64le and not aarch64 and not win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}  # [win and <1.21]
+    - {{ pin_compatible('numpy') }}  # [numpy<1.21]
     - suitesparse  # [not ppc64le and not aarch64 and not win]
 
 test:
