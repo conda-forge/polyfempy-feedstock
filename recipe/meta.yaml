@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: 010075df80a81fa97459dd427d147c8517979a7ee50d5344aa6d3d609775dd7c
+  sha256: 03e41d7e567395920f8772bbc5d9303affb5068cf19786a23ce74eabe97e68ad
 
 
 build:
@@ -29,7 +29,7 @@ requirements:
     - pip
     - libblas
     - libcblas
-    - numpy  # [<1.21]
+    - numpy  <= 1.20
     - suitesparse  # [not ppc64le and not aarch64 and not win]
   run:
     - python
