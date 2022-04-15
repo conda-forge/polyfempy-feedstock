@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/polyfem/polyfem-python/archive/{{ version }}.tar.gz
-  sha256: 54c0fab45cfb49156fd06567dbc16b284418f6691e86d45a665854108886da65
+  sha256: c3a1c953736ad75afe901d66293607b98ddf3f538994bd4e0a9422bb2e3be1bd
 
 
 build:
