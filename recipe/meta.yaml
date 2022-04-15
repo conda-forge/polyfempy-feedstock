@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 6
+  number: 7
   skip: True  # [py<31]
   script:
     - set "CMAKE_GENERATOR=NMake Makefiles"  # [win]
