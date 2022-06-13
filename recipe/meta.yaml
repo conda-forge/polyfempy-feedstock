@@ -39,7 +39,7 @@ test:
   imports:
     - polyfempy
   commands:
-    - polyfempy --help
+    - python test/test_bending.py
 
 about:
   home: https://polyfem.github.io/
