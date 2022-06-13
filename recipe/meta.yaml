@@ -43,8 +43,8 @@ test:
     - echo $(ls)
     - echo $(pwd)
     - echo $(ls ../)
-    - echo $(ls work)
-    - python work/test/test_bending.py
+    - echo $(ls ../work)
+    - python ../work/test/test_bending.py
 
 about:
   home: https://polyfem.github.io/
