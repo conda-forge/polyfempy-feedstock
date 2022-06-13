@@ -39,9 +39,9 @@ test:
   imports:
     - polyfempy
   commands:
-    - ls
-    - pwd
-    - python test/test_bending.py
+    - echo ls $SRC_DIR
+    - echo pwd
+    - python $SRC_DIR/test/test_bending.py
 
 about:
   home: https://polyfem.github.io/
