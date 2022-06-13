@@ -40,7 +40,8 @@ test:
     - polyfempy
   commands:
     - echo ls $SRC_DIR
-    - echo pwd
+    - echo $(ls)
+    - echo $(pwd)
     - python $SRC_DIR/test/test_bending.py
 
 about:
