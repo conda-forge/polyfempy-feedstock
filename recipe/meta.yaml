@@ -41,7 +41,7 @@ test:
   imports:
     - polyfempy
   commands:
-    - nose polyfempy
+    - nosetests polyfempy
 
 about:
   home: https://polyfem.github.io/
