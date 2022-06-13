@@ -36,15 +36,12 @@ requirements:
     - suitesparse  # [not ppc64le and not aarch64 and not win]
 
 test:
+  requires:
+    - nose
   imports:
     - polyfempy
   commands:
-    - echo ls $SRC_DIR
-    - echo $(ls)
-    - echo $(pwd)
-    - echo $(ls ../)
-    - echo $(ls ../work)
-    - python ../work/test/test_bending.py
+    - nose polyfempy
 
 about:
   home: https://polyfem.github.io/
