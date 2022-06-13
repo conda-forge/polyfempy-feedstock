@@ -39,6 +39,8 @@ test:
   imports:
     - polyfempy
   commands:
+    - ls
+    - pwd
     - python test/test_bending.py
 
 about:
