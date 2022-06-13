@@ -38,6 +38,8 @@ requirements:
 test:
   imports:
     - polyfempy
+  commands:
+    - polyfempy --help
 
 about:
   home: https://polyfem.github.io/
