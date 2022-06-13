@@ -22,7 +22,6 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - make
   host:
     - python
     - pip
@@ -37,11 +36,13 @@ requirements:
 
 test:
   imports:
-    - polyfempy
+    - numpy
   commands:
     - echo ls $SRC_DIR
     - echo $(ls)
     - echo $(pwd)
+    - echo $(ls ../)
+    - echo $(ls ../../)
     - python $SRC_DIR/test/test_bending.py
 
 about:
