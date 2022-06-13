@@ -22,6 +22,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
+    - make
   host:
     - python
     - pip
@@ -36,7 +37,7 @@ requirements:
 
 test:
   imports:
-    - numpy
+    - polyfempy
   commands:
     - echo ls $SRC_DIR
     - echo $(ls)
