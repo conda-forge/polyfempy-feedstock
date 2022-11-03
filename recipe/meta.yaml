@@ -1,5 +1,5 @@
 {% set name = "polyfempy" %}
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -36,8 +36,12 @@ requirements:
     - suitesparse  # [not ppc64le and not aarch64 and not win]
 
 test:
+  requires:
+    - nose
   imports:
     - polyfempy
+  commands:
+    - nosetests polyfempy
 
 about:
   home: https://polyfem.github.io/

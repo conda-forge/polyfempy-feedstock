@@ -15,17 +15,17 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 libblas:
-- 3.8 *netlib
+- 3.9 *netlib
 libcblas:
-- 3.8 *netlib
+- 3.9 *netlib
 numpy:
-- '1.19'
+- '1.20'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_73_pypy
+- 3.8.* *_cpython
 suitesparse:
 - '5'
 target_platform:
