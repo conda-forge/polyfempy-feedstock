@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 7
+  number: 8
   skip: True  # [py<31]
   script:
     - {{ PYTHON }} -m pip install . --no-deps -vv
