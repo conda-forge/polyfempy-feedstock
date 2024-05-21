@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 9
+  number: 10
   skip: True  # [py<31]
   script:
     - {{ PYTHON }} -m pip install . --no-deps -vv
@@ -20,6 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - make
@@ -32,7 +33,6 @@ requirements:
     - suitesparse  # [not ppc64le and not aarch64 and not win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - suitesparse  # [not ppc64le and not aarch64 and not win]
 
 test:
